@@ -1,3 +1,4 @@
+
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -56,33 +57,59 @@ public class RoomTest {
         assertEquals(1, room.getRoomCapacity());
     }
 
-    //   ------------ Tests for Ballroom  ---------------
+    //   ------------ Tests for Bedroom THREE ---------------
+
+    @Test
+    public void bedroomThreeHasRoomName() {
+        room = new BedroomThree("Bedroom Three", "Double", 79.99, 2);
+        assertEquals("Bedroom Three", room.getRoomName());
+    }
+
+    @Test
+    public void bedroomThreeHasRoomType() {
+        room = new BedroomThree("Bedroom Three", "Double", 79.99, 2);
+        assertEquals("Double", room.getRoomType());
+    }
+
+    @Test
+    public void bedroomThreeHasRoomRate() {
+        room = new BedroomThree("Bedroom Three", "Double", 79.99, 2);
+        assertEquals(79.99, room.getRoomRate(), 0.01);
+    }
+
+    @Test
+    public void bedroomThreeHasRoomCapacity() {
+        room = new BedroomThree("Bedroom Three", "Double", 79.99, 2);
+        assertEquals(2, room.getRoomCapacity());
+    }
+
+    //   ------------ Tests for BALLROOM  ---------------
 
     @Test
     public void ballroomHasRoomName() {
-        room = new Ballroom("Ballroom", "Function", 750.00, 200);
-        assertEquals("Ballroom", room.getRoomName());
+        room = new Ballroom("Rooms.FunctionRooms.Ballroom", "Function", 750.00, 200);
+        assertEquals("Rooms.FunctionRooms.Ballroom", room.getRoomName());
     }
 
     @Test
     public void ballroomHasRoomType() {
-        room = new Ballroom("Ballroom", "Function", 750.00, 200);
+        room = new Ballroom("Rooms.FunctionRooms.Ballroom", "Function", 750.00, 200);
         assertEquals("Function", room.getRoomType());
     }
 
     @Test
     public void ballroomHasRoomRate() {
-        room = new Ballroom("Ballroom", "Function", 750.00, 200);
+        room = new Ballroom("Rooms.FunctionRooms.Ballroom", "Function", 750.00, 200);
         assertEquals(750, room.getRoomRate(), 0.01);
     }
 
     @Test
     public void ballroomHasRoomCapacity() {
-        room = new Ballroom("Ballroom", "Function", 750.00, 200);
+        room = new Ballroom("Rooms.FunctionRooms.Ballroom", "Function", 750.00, 200);
         assertEquals(200, room.getRoomCapacity());
     }
 
-    //   ------------ Tests for Bedroom TWO ---------------
+    //   ------------ Tests for DINING ROOM ---------------
 
     @Test
     public void diningRoomHasRoomName() {
@@ -108,7 +135,7 @@ public class RoomTest {
         assertEquals(100, room.getRoomCapacity());
     }
 
-    //   ------------ Tests for Conference Room ---------------
+    //   ------------ Tests for CONFERENCE ROOM ---------------
 
     @Test
     public void conferenceRoomHasRoomName() {
