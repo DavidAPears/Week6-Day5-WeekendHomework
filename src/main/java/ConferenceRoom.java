@@ -1,4 +1,10 @@
-package PACKAGE_NAME;
+public class ConferenceRoom extends Room {
 
-public class ConferenceRoom {
+    private String corporateGuest;
+
+    public ConferenceRoom(String roomName, String roomType, double roomRate, int roomCapacity) {
+        super(roomName, roomType, roomRate, roomCapacity);{
+            this.corporateGuest = corporateGuest;
+        }
+    }
 }

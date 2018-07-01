@@ -108,6 +108,32 @@ public class RoomTest {
         assertEquals(100, room.getRoomCapacity());
     }
 
+    //   ------------ Tests for Conference Room ---------------
+
+    @Test
+    public void conferenceRoomHasRoomName() {
+        room = new ConferenceRoom("Conference Room", "Function", 150.00, 20 );
+        assertEquals("Conference Room", room.getRoomName());
+    }
+
+    @Test
+    public void conferenceRoomHasRoomType() {
+        room = new ConferenceRoom("Conference Room", "Function", 150.00, 20 );
+        assertEquals("Function", room.getRoomType());
+    }
+
+    @Test
+    public void conferenceRoomHasRoomRate() {
+        room = new ConferenceRoom("Conference Room", "Function", 150.00, 20 );
+        assertEquals(150.00, room.getRoomRate(), 0.01);
+    }
+
+    @Test
+    public void conferenceRoomHasRoomCapacity() {
+        room = new ConferenceRoom("Conference Room", "Function", 150.00, 20 );
+        assertEquals(20, room.getRoomCapacity());
+    }
+
 }
 
 
