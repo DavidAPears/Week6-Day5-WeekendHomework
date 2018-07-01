@@ -1,4 +1,5 @@
+import java.util.ArrayList;
+
 public class HotelTest {
-    public static class RoomTest {
-    }
+
 }

@@ -1,3 +1,5 @@
+package Bedrooms;
+
 public class BedroomThree extends Room {
 
     private String guest;

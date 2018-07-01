@@ -1,3 +1,5 @@
+package Bedrooms;
+
 public abstract class Room {
 
     private String roomName;

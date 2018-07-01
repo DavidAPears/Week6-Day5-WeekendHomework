@@ -1,3 +1,7 @@
+package FunctionRooms;
+
+import Bedrooms.Room;
+
 public class Ballroom extends Room {
 
     private String weddingGuest;

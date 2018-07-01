@@ -1,11 +1,22 @@
+import java.util.ArrayList;
+
 public class Hotel {
 
-//    private String name;
-//    private ArrayList<Bedroom> bedrooms;
-//    private ArrayList<FunctionRoom> functionRooms;
-//
-//    public Hotel(String name, ArrayList<Bedroom>bedrooms, ArrayList<FunctionRoom> functionRooms) {
-//        this.name = name;
-//        this.functionRooms = functionRooms;
-//    }
+    private String hotelname;
+    private ArrayList<Bedrooms> bedrooms;
+    private ArrayList<Guest> guests;
+
+    public Hotel(String name) {
+
+        hotelname = hotelname;
+
+        bedrooms = new ArrayList<Bedrooms>();
+        bedrooms.add(new Bedrooms.BedroomOne("Bedroom One", "Double", 79.99, 2));
+        bedrooms.add(new Bedrooms.BedroomTwo("Bedroom Two", "Single", 59.99, 1));
+        bedrooms.add(new Bedrooms.BedroomThree("Bedroom Two", "Doubkle", 79.99, 2));
+
+        guests = new ArrayList<Guest>();
+
+
+    }
 }

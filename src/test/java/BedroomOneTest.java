@@ -1,3 +1,4 @@
+import Bedrooms.BedroomOne;
 import org.junit.Before;
 
 import static org.junit.Assert.assertEquals;

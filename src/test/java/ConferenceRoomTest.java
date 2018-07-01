@@ -1,3 +1,4 @@
+import FunctionRooms.ConferenceRoom;
 import org.junit.Before;
 
 public class ConferenceRoomTest {

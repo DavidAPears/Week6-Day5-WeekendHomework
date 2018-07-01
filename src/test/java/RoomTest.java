@@ -1,4 +1,11 @@
 
+import Bedrooms.BedroomOne;
+import Bedrooms.BedroomThree;
+import Bedrooms.BedroomTwo;
+import Bedrooms.Room;
+import FunctionRooms.Ballroom;
+import FunctionRooms.ConferenceRoom;
+import FunctionRooms.DiningRoom;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -87,25 +94,25 @@ public class RoomTest {
 
     @Test
     public void ballroomHasRoomName() {
-        room = new Ballroom("Rooms.FunctionRooms.Ballroom", "Function", 750.00, 200);
-        assertEquals("Rooms.FunctionRooms.Ballroom", room.getRoomName());
+        room = new Ballroom("Bedrooms.FunctionRooms.FunctionRooms.Ballroom", "Function", 750.00, 200);
+        assertEquals("Bedrooms.FunctionRooms.FunctionRooms.Ballroom", room.getRoomName());
     }
 
     @Test
     public void ballroomHasRoomType() {
-        room = new Ballroom("Rooms.FunctionRooms.Ballroom", "Function", 750.00, 200);
+        room = new Ballroom("Bedrooms.FunctionRooms.FunctionRooms.Ballroom", "Function", 750.00, 200);
         assertEquals("Function", room.getRoomType());
     }
 
     @Test
     public void ballroomHasRoomRate() {
-        room = new Ballroom("Rooms.FunctionRooms.Ballroom", "Function", 750.00, 200);
+        room = new Ballroom("Bedrooms.FunctionRooms.FunctionRooms.Ballroom", "Function", 750.00, 200);
         assertEquals(750, room.getRoomRate(), 0.01);
     }
 
     @Test
     public void ballroomHasRoomCapacity() {
-        room = new Ballroom("Rooms.FunctionRooms.Ballroom", "Function", 750.00, 200);
+        room = new Ballroom("Bedrooms.FunctionRooms.FunctionRooms.Ballroom", "Function", 750.00, 200);
         assertEquals(200, room.getRoomCapacity());
     }
 
@@ -113,25 +120,25 @@ public class RoomTest {
 
     @Test
     public void diningRoomHasRoomName() {
-        room = new DiningRoom("Dining Room", "Function", 0.00, 100);
-        assertEquals("Dining Room", room.getRoomName());
+        room = new DiningRoom("Dining Bedrooms.Room", "Function", 0.00, 100);
+        assertEquals("Dining Bedrooms.Room", room.getRoomName());
     }
 
     @Test
     public void diningRoomHasRoomType() {
-        room = new DiningRoom("Dining Room", "Function", 0.00, 100);
+        room = new DiningRoom("Dining Bedrooms.Room", "Function", 0.00, 100);
         assertEquals("Function", room.getRoomType());
     }
 
     @Test
     public void diningRoomHasRoomRate() {
-        room = new DiningRoom("Dining Room", "Function", 0.00, 100);
+        room = new DiningRoom("Dining Bedrooms.Room", "Function", 0.00, 100);
         assertEquals(0.00, room.getRoomRate(), 0.01);
     }
 
     @Test
     public void diningRoomHasRoomCapacity() {
-        room = new DiningRoom("Dining Room", "Function", 0.00, 100);
+        room = new DiningRoom("Dining Bedrooms.Room", "Function", 0.00, 100);
         assertEquals(100, room.getRoomCapacity());
     }
 
@@ -139,25 +146,25 @@ public class RoomTest {
 
     @Test
     public void conferenceRoomHasRoomName() {
-        room = new ConferenceRoom("Conference Room", "Function", 150.00, 20 );
-        assertEquals("Conference Room", room.getRoomName());
+        room = new ConferenceRoom("Conference Bedrooms.Room", "Function", 150.00, 20 );
+        assertEquals("Conference Bedrooms.Room", room.getRoomName());
     }
 
     @Test
     public void conferenceRoomHasRoomType() {
-        room = new ConferenceRoom("Conference Room", "Function", 150.00, 20 );
+        room = new ConferenceRoom("Conference Bedrooms.Room", "Function", 150.00, 20 );
         assertEquals("Function", room.getRoomType());
     }
 
     @Test
     public void conferenceRoomHasRoomRate() {
-        room = new ConferenceRoom("Conference Room", "Function", 150.00, 20 );
+        room = new ConferenceRoom("Conference Bedrooms.Room", "Function", 150.00, 20 );
         assertEquals(150.00, room.getRoomRate(), 0.01);
     }
 
     @Test
     public void conferenceRoomHasRoomCapacity() {
-        room = new ConferenceRoom("Conference Room", "Function", 150.00, 20 );
+        room = new ConferenceRoom("Conference Bedrooms.Room", "Function", 150.00, 20 );
         assertEquals(20, room.getRoomCapacity());
     }
 

@@ -1,3 +1,4 @@
+import FunctionRooms.DiningRoom;
 import org.junit.Before;
 
 public class DiningRoomTest {
@@ -6,7 +7,7 @@ public class DiningRoomTest {
 
     @Before
     public void before(){
-        diningRoom = new DiningRoom("Dining Room", "Function", 0.00, 100);
+        diningRoom = new DiningRoom("Dining Bedrooms.Room", "Function", 0.00, 100);
     }
 
 }

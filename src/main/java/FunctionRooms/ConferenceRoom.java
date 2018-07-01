@@ -1,3 +1,7 @@
+package FunctionRooms;
+
+import Bedrooms.Room;
+
 public class ConferenceRoom extends Room {
 
     private String corporateGuest;

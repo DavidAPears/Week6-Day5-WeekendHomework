@@ -1,3 +1,4 @@
+import Bedrooms.BedroomThree;
 import org.junit.Before;
 
 public class BedroomThreeTest {
